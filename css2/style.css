@@ -1,6 +1,7 @@
 
 
 @import url('icomoon.css');
+@import url(flaticon.css);
  
 /*** 
 =============================================
@@ -10,14 +11,10 @@
 .appointment-area {
     position: relative;
     display: block;
-  
     background-position: top right;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: auto;
-   
-    
-    
     z-index: 1;
 }
 .map-content-box .sec-title .title{
@@ -43,28 +40,109 @@
     position: absolute;
 }
 .map-content-box .inner .overlay .single-location-box.one {
-    top: 49%;
+    top: 54%;
     left: 20%;
 }
 .map-content-box .inner .overlay .single-location-box.two{
     top: 22%;
-    left:73%;    
+    left:71%;    
 }
 .map-content-box .inner .overlay .single-location-box.three{
     left: 32%; 
-    bottom: 32%;
+    bottom: 38%;
 }
 .map-content-box .inner .overlay .single-location-box.four{
     left: 40%;
-    bottom: 17%;
+    bottom: 25%;
 }
 .map-content-box .inner .overlay .single-location-box.five{
     left: 31%;
-    bottom: 42%;
+    bottom: 44%;
 }
 .map-content-box .inner .overlay .single-location-box.six{
-    left: 38%;
-    bottom: 31%;
+    left: 36%;
+    bottom: 37%;
+}
+
+@media (max-width: 1410.98px) {
+    .map-content-box .inner .overlay .single-location-box.one {
+        top: 54%;
+        left: 21%;
+    }
+    .map-content-box .inner .overlay .single-location-box.two{
+        top: 22%;
+        left:74%;    
+    }
+    .map-content-box .inner .overlay .single-location-box.three{
+        left: 33%; 
+        bottom: 38%;
+    }
+    .map-content-box .inner .overlay .single-location-box.four{
+        left: 41%;
+        bottom: 25%;
+    }
+    .map-content-box .inner .overlay .single-location-box.five{
+        left: 31%;
+        bottom: 44%;
+    }
+    .map-content-box .inner .overlay .single-location-box.six{
+        left: 37%;
+        bottom: 37%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .map-content-box .inner .overlay .single-location-box.one {
+        top: 49%;
+        left: 19%;
+    }
+    .map-content-box .inner .overlay .single-location-box.two{
+        top: 16%;
+        left:73%;    
+    }
+    .map-content-box .inner .overlay .single-location-box.three{
+        left: 32%; 
+        bottom: 37%;
+    }
+    .map-content-box .inner .overlay .single-location-box.four{
+        left: 40%;
+        bottom: 23%;
+    }
+    .map-content-box .inner .overlay .single-location-box.five{
+        left: 31%;
+        bottom: 43%;
+    }
+    .map-content-box .inner .overlay .single-location-box.six{
+        left: 36%;
+        bottom: 38%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .map-content-box .inner .overlay .single-location-box.one {
+        top: 44%;
+        left: 19%;
+    }
+    .map-content-box .inner .overlay .single-location-box.two{
+        top: 10%;
+        left:72%;    
+    }
+    .map-content-box .inner .overlay .single-location-box.three{
+        left: 31%; 
+        bottom: 36%;
+    }
+    .map-content-box .inner .overlay .single-location-box.four{
+        left: 39%;
+        bottom: 23%;
+    }
+    .map-content-box .inner .overlay .single-location-box.five{
+        left: 31%;
+        bottom: 44%;
+    }
+    .map-content-box .inner .overlay .single-location-box.six{
+        left: 35%;
+        bottom: 37%;
+    }
 }
 
 .map-content-box .inner .overlay .marker-box{
@@ -72,6 +150,116 @@
 }
 .map-content-box .inner .overlay .marker-box span:before{
     color: #1d1d1b;
+    font-size: 50px;
+    line-height: 50px;
+    cursor: pointer;
+
+}
+
+.map-content-box .inner .overlay .location-info {
+    position: absolute;
+    left: -20px;
+    bottom: 100px;
+    width: 270px;
+    opacity: 0;
+    visibility: hidden;
+    padding: 25px 30px 22px;
+    padding-right: 20px;
+    margin-left: 0;
+    border-radius: 0px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    z-index: 9999999999;
+
+}
+@media screen and (max-width: 880px) {
+    .map-content-box .inner .overlay .location-info {
+        width: 150px;
+        font-size: 10px;
+        padding: 12px 10px 10px 20px;
+    }
+}
+
+.map-content-box .inner .overlay .single-location-box:hover .location-info  {
+    opacity: 1;
+    visibility: visible;
+    bottom: 55px;
+}
+.map-content-box .inner .overlay .single-location-box:hover .marker-box span:before{
+    color: #e9212e;
+    transition: all 500ms ease;
+}
+.map-content-box .inner .overlay .location-info h3{
+    color: #27282c;
+    font-weight: 700;
+    margin: 0 0 13px;
+}
+.map-content-box .inner .overlay .location-info p{
+    margin: 0;    
+}
+
+
+
+
+
+/*.appointment-area {
+    position: relative;
+    display: block;
+    background: #27282c;
+    background-position: top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    z-index: 1;
+}
+.map-content-box .sec-title .title{
+    color: #ffffff;    
+}
+
+.map-content-box .inner{
+    position: relative;
+    display: block;
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 99;
+}
+.map-content-box .inner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.map-content-box .inner .overlay .single-location-box{
+    position: absolute;
+}
+.map-content-box .inner .overlay .single-location-box.one {
+    top: 60px;
+    left: 70px;
+}
+.map-content-box .inner .overlay .single-location-box.two{
+    top: 100px;
+    left: 50%;    
+}
+.map-content-box .inner .overlay .single-location-box.three{
+    left: 150px; 
+    bottom: 70px;
+}
+.map-content-box .inner .overlay .single-location-box.four{
+    right: 50px;
+    bottom: 60px;
+}
+
+
+
+.map-content-box .inner .overlay .marker-box{
+    display: inline-block;
+}
+.map-content-box .inner .overlay .marker-box span:before{
+    color: #ffffff;
     font-size: 50px;
     line-height: 50px;
     cursor: pointer;
@@ -121,144 +309,4 @@
 }
 .map-content-box .inner .overlay .location-info p{
     margin: 0;    
-}
-
-
-.appointment-box{
-    position: relative;
-    display: block;
-    padding: 44px 50px 50px;
-    max-width: 570px;
-    width: 100%;
-    background: #ffffff;
-}
-.appointment-box .title-box{
-    position: relative;
-    display: block;  
-    padding-bottom: 22px;
-}
-.appointment-box .title-box h2{
-    color: #27282c;
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 600;
-    margin: 0 0 10px;
-}
-.appointment-box .title-box span{}
-
-.appointment{
-    position: relative;
-    display: block;
-}
-.appointment-form .single-box{
-    position: relative;
-    display: block;
-}
-.appointment-form input[type="text"], 
-.appointment-form input[type="email"], 
-.appointment-form textarea {
-    position: relative;
-    display: block;
-    padding: 0 20px;
-    border: 1px solid #ededed;
-    background: #ffffff;
-    color: #7c7e84;
-    font-size: 15px;
-    font-weight: 400;
-    width: 100%;
-    height: 60px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    transition: all 500ms ease; 
-}
-.appointment-form input[type="text"]:focus{
-    border-color: #e9212e;    
-}
-.appointment-form input[type="email"]:focus{
-    border-color: #e9212e;     
-}
-.appointment-form .single-box button{
-    display: block;
-    width: 100%;
-    background: # 9A3820;
-    color: #ffffff;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-.appointment-form input::-webkit-input-placeholder {
-    color: #7c7e84;
-}
-.appointment-form input:-moz-placeholder {
-    color: #7c7e84;
-}
-.appointment-form input::-moz-placeholder {
-    color: #7c7e84;
-}
-.appointment-form input:-ms-input-placeholder {
-    color: #7c7e84;
-}
-
-.appointment-form .single-box .bootstrap-select {
-    position: relative;
-    display: block;
-}
-.appointment-form .single-box .bootstrap-select>.dropdown-toggle {
-    outline: none !important;
-    border-radius: 5px;
-    border: 1px solid #edf2f7;
-    height: 60px;
-    background-color: transparent;
-    padding: 0;
-    padding-left: 20px;
-    color: #83888d;
-    line-height: 60px;
-    margin: 0;
-    box-shadow: none !important;
-}
-.appointment-form .single-box .bootstrap-select>.dropdown-toggle::after {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    width: auto;
-    height: auto;
-    font-family: 'FontAwesome';
-    content: '\f107';
-    color: #83888d;
-    font-size: 18px;
-    transform: translateY(-50%);
-    margin: 0;
-    border: none;
-}
-.appointment-form .single-box .bootstrap-select .dropdown-menu {
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-    border: 0px solid #ddd;
-    background: #f9f9f9;
-    font-size: 16px;
-    color: #000000;
-}
-.appointment-form .single-box .dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 9px 20px 9px;
-    font-weight: 400;
-    color: #222222;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    transition: all 500ms ease;
-}
-.appointment-form .single-box .dropdown-item.active,
-.appointment-form .single-box .dropdown-item:active {
-    background: #e9212e;
-    color: #fff;
-}
-.appointment-form .single-box .dropdown-item:hover {
-    background: #e9212e;
-    color: #fff;
-}
-
-
+}*/
