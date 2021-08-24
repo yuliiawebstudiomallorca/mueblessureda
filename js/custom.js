@@ -676,6 +676,11 @@ function home_projects_filter(){
 					stamp: '.stamp',
                 });
 
+            if (jQuery(".masonry-filter li").hasClass("active")) {
+                var selector = jQuery(".masonry-filter li").find("a").attr("data-filter");
+                $container.isotope({ filter: selector });
+            }
+
             jQuery('.masonry-filter li').on('click',function() {                           
                 var selector = jQuery(this).find("a").attr('data-filter');
                 jQuery('.masonry-filter li').removeClass('active');
