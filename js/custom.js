@@ -967,3 +967,8 @@ All JavaScript fuctions Start
 
     //________Switcher panal slide function END	________//
 })(jQuery);
+
+
+
+
+  
