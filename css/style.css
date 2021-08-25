@@ -8255,8 +8255,13 @@ HEADER (top part of page)
 	#header-part.fix-map-header {
 		height: 160px;
 	}
-}
 
+.footer-top{
+
+	background-position: 207% 1190px;
+
+}
+}
 
 /*____ LOGO ( company identify  symbol )
 ======================================*/
@@ -10475,7 +10480,7 @@ button.scroltop span {
 
 	
 .sx-bnr-inr {
-	height:300px;
+	height:220px;
 }
 
 }
