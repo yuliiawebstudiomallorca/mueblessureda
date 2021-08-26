@@ -212,18 +212,6 @@ div.embed-responsive {
     min-height: 50vh;
 }
 
-.header-title {
-    margin-top: 36px !important;
-}
-
-.header-subtitle {
-    margin-top: 200px !important;
-}
-
-.header-button {
-    margin-top: 300px !important;
-}
-
 @media screen and (min-width: 400px) {
     .vimeo-wrapper iframe {
         min-height: 60vh;
@@ -236,32 +224,16 @@ div.embed-responsive {
     }
 }
 
-@media screen and (min-width: 600px) {
-    .header-title {
-        margin-top: 60px !important;
-    }
-    
-    .header-subtitle {
-        margin-top: 230px !important;
-    }
-    
-    .header-button {
-        margin-top: 360px !important;
-    }
+.header-container {
+    margin-top: 80px;
 }
 
-@media screen and (min-width: 720px) {
-    .header-title {
-        margin-top: 90px !important;
-    }
-    
-    .header-subtitle {
-        margin-top: 260px !important;
-    }
-    
-    .header-button {
-        margin-top: 400px !important;
-    }
+.header-wrapper div {
+    position: relative !important;
+}
+
+.header-wrapper.header-subtitle {
+    margin: 16px 0;
 }
 
 @media screen and (min-width: 745px) {
@@ -270,17 +242,15 @@ div.embed-responsive {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .header-title {
-        margin-top: 90px !important;
+@media screen and (min-width: 1024px) {
+    .header-container {
+        margin-top: 100px;
     }
-    
-    .header-subtitle {
-        margin-top: 300px !important;
-    }
-    
-    .header-button {
-        margin-top: 420px !important;
+}
+
+@media screen and (min-width: 1366px) {
+    .header-container {
+        margin-top: 200px;
     }
 }
 
@@ -288,17 +258,11 @@ div.embed-responsive {
     .vimeo-wrapper iframe {
         min-height: 90vh;
     }
+}
 
-    .header-title {
-        margin-top: 120px !important;
-    }
-    
-    .header-subtitle {
-        margin-top: 360px !important;
-    }
-    
-    .header-button {
-        margin-top: 500px !important;
+@media screen and (min-width: 1366px) {
+    .header-wrapper.header-subtitle {
+        margin: 32px 0;
     }
 }
 
