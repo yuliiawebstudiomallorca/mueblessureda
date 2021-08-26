@@ -462,6 +462,14 @@ Version: 1.0
 
 
 
+
+.banner-title-name p {
+	margin: 0 auto;
+}
+
+
+
+
 .nav_m {
     width: 960px;
     margin: 0 auto;
@@ -9642,7 +9650,7 @@ padding:7px 0px;
 .sx-bnr-inr-entry {
 	display: table-cell;
 	vertical-align: bottom;
-	text-align: left;
+	text-align: center;
 	position: relative;
 	z-index: 1;
 	vertical-align:bottom;
