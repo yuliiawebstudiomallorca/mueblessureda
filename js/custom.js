@@ -711,8 +711,10 @@ All JavaScript fuctions Start
 
     function masonryBox() {
         let loadItemsCount = 5;
-        let currentItemsLoaded = 0;
         let maxItemsToLoad = [];
+        let selector = document
+            .querySelector(".masonry-filter li[class=active] a")
+            .getAttribute("data-filter");
 
         if (jQuery().isotope) {
             var $container = jQuery(".masonry-outer");
@@ -723,20 +725,17 @@ All JavaScript fuctions Start
                 stamp: ".stamp",
             });
 
-            var selector = document
-                .querySelector(".masonry-filter li[class=active] a")
-                .getAttribute("data-filter");
-
             updateFilterCounts(selector);
 
             jQuery(".masonry-filter li").on("click", function () {
-                var selector = jQuery(this).find("a").attr("data-filter");
+                selector = jQuery(this).find("a").attr("data-filter");
                 jQuery(".masonry-filter li").removeClass("active");
                 jQuery(this).addClass("active");
-                loadItemsCount = 5;
-                maxItemsToLoad = [];
-                loadMore(selector);
-                updateFilterCounts(selector);
+                if (jQuery(this).hasClass("active")) {
+                    loadItemsCount = 5;
+                    maxItemsToLoad = [];
+                    updateFilterCounts(selector);
+                }
                 return false;
             });
 
@@ -746,6 +745,7 @@ All JavaScript fuctions Start
                     .forEach((elemRef) => {
                         if (!elemRef.classList.contains(selector.slice(1)))
                             return;
+
                         if (selector) {
                             maxItemsToLoad.push(elemRef);
 
@@ -755,21 +755,18 @@ All JavaScript fuctions Start
                                     $container.isotope({
                                         filter: `${selector}.show`,
                                     });
-                                    currentItemsLoaded = array.length;
                                 }
                             });
                         }
                     });
             }
 
-            function loadMore(selector) {
-                maxItemsToLoad = [];
-                if (selector) {
-                    jQuery("#loadMorebtn-5").on("click", function () {
-                        loadItemsCount += 5;
-                        updateFilterCounts(selector);
-                    });
-                }
+            function loadMore() {
+                jQuery("#loadMorebtn-5").on("click", function () {
+                    maxItemsToLoad = [];
+                    loadItemsCount += 5;
+                    updateFilterCounts(selector);
+                });
             }
 
             loadMore(selector);
