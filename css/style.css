@@ -462,14 +462,6 @@ Version: 1.0
 
 
 
-
-.banner-title-name p {
-	margin: 0 auto;
-}
-
-
-
-
 .nav_m {
     width: 960px;
     margin: 0 auto;
@@ -516,34 +508,6 @@ Version: 1.0
     cursor: pointer;
 }
 
-.one{
-    left: 21%;
-    bottom: 43%;
-}
-
-.two{
-    left: 34%;
-    top: 52%;
-}
-
-.three{
-    right: 64%;
-    bottom: 32%;
-}
-
-.four{
-    right: 56%;
-    bottom: 34%;
-}
-
-.five{
-    right: 55%;
-    bottom: 18%;
-}
-.six{
-    right: 19%;
-    bottom: 72%;
-}
 
 @keyframes wave{
     from{
@@ -608,7 +572,7 @@ Version: 1.0
 
 body {
 	background-color: #FFF;
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 	color: #1d1d1b;
@@ -636,7 +600,7 @@ a:focus {
 }
 
 p {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 p a {
@@ -791,21 +755,21 @@ h6 a.sx-text-white:hover {
 }
 
 h1 {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 50px;
 	color: #1d1d1b;
 }
 
 h2 {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 44px;
 	color: #1d1d1b;
 }
 
 h3 {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
 	font-size: 38px;
 	color: #1d1d1b;
@@ -813,7 +777,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 22px;
 	color: #1d1d1b;
@@ -821,7 +785,7 @@ h4 {
 }
 
 h5 {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 18px;
 	color: #1d1d1b;
@@ -829,7 +793,7 @@ h5 {
 }
 
 h6 {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 16px;
 	color: #1d1d1b;
@@ -855,12 +819,12 @@ h6 {
 p {
 	line-height: 24px;
 	margin-bottom: 20px;
-	font-weight:500;
 }
 
 strong {
 	font-weight: 600;
 }
+
 
 /*-------------------------------------
 	text align
@@ -2810,12 +2774,6 @@ padding:80px 15px 50px 15px;
 	.sx-right-part {
 		padding-bottom:55px !important;
 	}
-
-
-
-
-
-
 }
 
 
@@ -3739,12 +3697,6 @@ padding:80px 15px 50px 15px;
     letter-spacing: 3px;
 	font-size:12px;
 }	
-
-#slide-901-layer-2.tp-caption.tp-resizeme{
-
-	margin-top:-100px;
-}
-
 }
 
 .rev-btn .site-button,
@@ -3757,11 +3709,6 @@ padding:80px 15px 50px 15px;
 .rev-btn .site-button-secondry {
 	letter-spacing:0px !important;
 	font-size:14px !important;
-}
-
-#slide-901-layer-2.tp-caption.tp-resizeme{
-
-	margin-top:-30px;
 }
 }
 
@@ -8263,13 +8210,8 @@ HEADER (top part of page)
 	#header-part.fix-map-header {
 		height: 160px;
 	}
-
-.footer-top{
-
-	background-position: 20git7% 1190px;
-
 }
-}
+
 
 /*____ LOGO ( company identify  symbol )
 ======================================*/
@@ -9650,12 +9592,12 @@ padding:7px 0px;
 .sx-bnr-inr-entry {
 	display: table-cell;
 	vertical-align: bottom;
-	text-align: center;
+	text-align: left;
 	position: relative;
 	z-index: 1;
 	vertical-align:bottom;
 	width:100%;
-	
+	padding-bottom:30px;
 }
 
 .sx-bnr-inr-entry .banner-title-outer {
@@ -10488,7 +10430,7 @@ button.scroltop span {
 
 	
 .sx-bnr-inr {
-	height:220px;
+	height:300px;
 }
 
 }
@@ -10530,7 +10472,7 @@ button.scroltop span {
 .section-head h3 {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .title-small {
@@ -12886,7 +12828,7 @@ transform-origin: center right;
 	font-weight:600;
 	color: rgba(177, 177, 177, 0.2);
 	line-height: 120px;
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	
 	-webkit-transition: all 0.5s linear;
 	-moz-transition: all 0.5s linear;
@@ -14700,7 +14642,7 @@ Image effect one
 --------------------------------*/
 
 .image-effect-one {
-  background-color: #000000;
+  background-color: #1d1d1b;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -14723,7 +14665,7 @@ Image effect one
   right: 0;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-
+  background-color: #1d1d1b;
   content: '';
   opacity: 0.6;
   z-index: 1;
@@ -15298,32 +15240,3 @@ background-position: 0px !important;
 	background-color: #2e313b;
 	padding: 0px 10px;
 }
-
-
-
-.vimeo-wrapper {
-	position: absolute;
-	right: 0;
-	top:0;
-	bottom: 0;
-	width: 100vw; 
-	height: 100vh;
-	object-fit: cover;
-	z-index: -1;
-	pointer-events: none;
-	overflow: hidden;
-
-	
- }
- .vimeo-wrapper iframe {
-	width: 100vw;
-	height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-	min-height: 100vh;
-	min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 99;
-	transform: translate(-50%, -50%);
-
- }
