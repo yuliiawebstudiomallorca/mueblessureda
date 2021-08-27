@@ -8266,9 +8266,17 @@ HEADER (top part of page)
 
 .footer-top{
 
-	background-position: 20git7% 1190px;
+	background-position: 20% 1190px;
 
 }
+
+
+.site-footer img {
+
+	
+	margin-bottom: 20px;
+}
+
 }
 
 /*____ LOGO ( company identify  symbol )
