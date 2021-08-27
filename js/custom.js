@@ -712,9 +712,6 @@ All JavaScript fuctions Start
     function masonryBox() {
         let loadItemsCount = 5;
         let maxItemsToLoad = [];
-        let selector = document
-            .querySelector(".masonry-filter li[class=active] a")
-            .getAttribute("data-filter");
 
         if (jQuery().isotope) {
             var $container = jQuery(".masonry-outer");
@@ -724,6 +721,10 @@ All JavaScript fuctions Start
                 originLeft: true,
                 stamp: ".stamp",
             });
+
+            var selector = jQuery(".masonry-filter li[class*='active']")
+                .find("a")
+                .attr("data-filter");
 
             updateFilterCounts(selector);
 
@@ -759,6 +760,8 @@ All JavaScript fuctions Start
                             });
                         }
                     });
+
+                return false;
             }
 
             function loadMore() {
