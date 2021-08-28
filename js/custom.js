@@ -29,6 +29,18 @@ All JavaScript fuctions Start
         );
     }
 
+    // ________Top Navbar function by = custom.js________//
+    function topNav() {
+        function closeTopNavOnLinkClicked() {
+            jQuery(".navbar-collapse a").click(function () {
+                jQuery(".navbar-collapse").collapse("hide");
+            });
+        }
+
+        setActiveStateToALinkWhenClicked();
+        closeTopNavOnLinkClicked();
+    }
+
     //________Video responsive function by = custom.js________//
 
     function video_responsive() {
@@ -880,6 +892,8 @@ All JavaScript fuctions Start
 	Window Load START
 ---------------------------------------------------------------------------------------------*/
     jQuery(window).on("load", function () {
+        // ________Top Navbar function by = custom.js________//
+        topNav();
         //________equal each box function by  = custom.js________//
         equalheight(".equal-wraper .equal-col"),
             //________masonry function function by = isotope.pkgd.min.js________//
