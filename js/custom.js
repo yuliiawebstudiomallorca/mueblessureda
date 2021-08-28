@@ -36,8 +36,6 @@ All JavaScript fuctions Start
                 jQuery(".navbar-collapse").collapse("hide");
             });
         }
-
-        setActiveStateToALinkWhenClicked();
         closeTopNavOnLinkClicked();
     }
 
