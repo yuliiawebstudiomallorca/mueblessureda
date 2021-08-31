@@ -29,6 +29,16 @@ All JavaScript fuctions Start
         );
     }
 
+    // ________Top Navbar function by = custom.js________//
+    function topNav() {
+        function closeTopNavOnLinkClicked() {
+            jQuery(".navbar-collapse a").click(function () {
+                jQuery(".navbar-collapse").collapse("hide");
+            });
+        }
+        closeTopNavOnLinkClicked();
+    }
+
     //________Video responsive function by = custom.js________//
 
     function video_responsive() {
@@ -712,9 +722,6 @@ All JavaScript fuctions Start
     function masonryBox() {
         let loadItemsCount = 5;
         let maxItemsToLoad = [];
-        let selector = document
-            .querySelector(".masonry-filter li[class=active] a")
-            .getAttribute("data-filter");
 
         if (jQuery().isotope) {
             var $container = jQuery(".masonry-outer");
@@ -724,6 +731,10 @@ All JavaScript fuctions Start
                 originLeft: true,
                 stamp: ".stamp",
             });
+
+            var selector = jQuery(".masonry-filter li[class*='active']")
+                .find("a")
+                .attr("data-filter");
 
             updateFilterCounts(selector);
 
@@ -759,6 +770,8 @@ All JavaScript fuctions Start
                             });
                         }
                     });
+
+                return false;
             }
 
             function loadMore() {
@@ -877,6 +890,8 @@ All JavaScript fuctions Start
 	Window Load START
 ---------------------------------------------------------------------------------------------*/
     jQuery(window).on("load", function () {
+        // ________Top Navbar function by = custom.js________//
+        topNav();
         //________equal each box function by  = custom.js________//
         equalheight(".equal-wraper .equal-col"),
             //________masonry function function by = isotope.pkgd.min.js________//
