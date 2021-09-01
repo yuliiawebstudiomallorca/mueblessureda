@@ -1,12 +1,15 @@
-       
 
-	window.onload = function() {
+jQuery(function () {
+
+	// Window load function
+
+	$(window).load(function () {
 
 		//Open street  Map
 		var mapcanvas = document.getElementById("map-canvas");
 		if (mapcanvas) {
 			// Element exists
-			var coord = [39.613700, 3.391598]; // <--- coordinates here
+			var coord = [39.57226778005461, 3.21869090673715]; // <--- coordinates here
 
 			var map = L.map('map-canvas', { scrollWheelZoom: false }).setView(coord, 18);
 
@@ -23,4 +26,7 @@
 			var marker = L.marker(coord, { icon: customIcon }).addTo(map);
 
 		}
-    };
+	})
+
+});
+
