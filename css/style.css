@@ -702,7 +702,7 @@ Version: 1.0
 .leaflet-pane > svg path.leaflet-interactive {
 	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
 	pointer-events: auto;
-	width: 149px !important;
+
 	height:auto !important;
 	}
 
