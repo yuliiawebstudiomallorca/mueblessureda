@@ -1464,7 +1464,7 @@ h6 {
 p {
 	line-height: 24px;
 	margin-bottom: 20px;
-	font-weight:500;
+	font-weight:400;
 }
 
 strong {
@@ -8920,7 +8920,7 @@ HEADER (top part of page)
 }
 
 .logo-header-inner img {
-	max-width: 100%;
+	max-width: 140%;
 	max-height: 100%;
 }
 
